@@ -187,6 +187,8 @@ class reactor:
                 faceSize = 2048
 
             logger.status(f"Restoring with {face_restore_model} | Face Size is set to {faceSize}")
+            print("OKATI")
+            print(face_restore_model)
 
             model_path = folder_paths.get_full_path("facerestore_models", face_restore_model)
 
