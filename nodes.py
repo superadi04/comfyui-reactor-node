@@ -202,6 +202,9 @@ class reactor:
                     connect_list=["32", "64", "128", "256"],
                 ).to(device)
                 checkpoint = torch.load(model_path)["params_ema"]
+                print("SAKETH KOTAMRAJU")
+                print(model_path)
+                print(checkpoint)
                 codeformer_net.load_state_dict(checkpoint)
                 facerestore_model = codeformer_net.eval()
 
